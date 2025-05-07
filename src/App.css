@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+body.light {
+  background-color: #f8f9fa;
+  color: #212529;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body.dark .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body.dark .form-control,
+body.dark .form-select {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border-color: #444;
 }
 
-.App-link {
-  color: #61dafb;
+body.dark .table {
+  background-color: #2b2b2b;
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body.dark .table th,
+body.dark .table td {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+body.dark .table-light {
+  background-color: #333 !important;
+  color: #fff;
+}
+
+body.dark .btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+body.dark .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
 }
